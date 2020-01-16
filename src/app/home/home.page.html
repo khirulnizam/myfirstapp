@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Keruls app no19
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	
+  <div class="ion-padding">
+  	<img src="../assets/logokerul.png" width="100%">
+	<ion-item>
+  		<ion-label position="floating">Masuk nama anda</ion-label>
+  		<ion-input [(ngModel)]="nama"></ion-input>
+  	</ion-item>
+  	<ion-item>
+  		<ion-label position="floating">Masuk nama ayah</ion-label>
+  		<ion-input [(ngModel)]="namaayah"></ion-input>
+  	</ion-item>
+  		<!--  comment html button -->
+  		<ion-button (click)="helloworld(nama, namaayah)"> 
+  			Papar 
+	 	</ion-button>
+	 	<ion-button color="success" 
+	 	[routerLink]="['/info']"> 
+  			Info 
+	 	</ion-button>
+	 	<ion-button color="warning"
+	 	[routerLink]="['/kamera']"> 
+  			Kamera
+	 	</ion-button>
+	
+    
+  </div>
+</ion-content>
